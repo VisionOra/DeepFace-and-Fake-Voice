@@ -26,7 +26,7 @@ from os.path import exists, join, basename, splitext
 
 import sys
 BASE_PATH_VOICE_CLONE = "./voice_clone/"
-sys.path.appen(BASE_PATH_VOICE_CLONE)
+sys.path.append(BASE_PATH_VOICE_CLONE)
 import numpy as np
 from pathlib import Path
 from scipy.io import wavfile
