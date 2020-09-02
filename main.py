@@ -32,7 +32,7 @@ from voice_clone.synthesizer.inference import Synthesizer
 from voice_clone.encoder import inference as encoder
 from voice_clone.vocoder import inference as vocoder
 
-BASE_PATH_VOICE_CLONE "./voice_clone/"
+BASE_PATH_VOICE_CLONE = "./voice_clone/"
 SAMPLE_RATE = 22050
 embedding = None
 
