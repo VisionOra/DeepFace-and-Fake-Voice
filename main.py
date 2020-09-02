@@ -25,6 +25,8 @@ from os.path import exists, join, basename, splitext
 #     !cd {project_name} && gdown https://drive.google.com/uc?id=1n1sPXvT34yXFLT47QZA6FIRGrwMeSsZc && unzip pretrained.zip
 
 import sys
+BASE_PATH_VOICE_CLONE = "./voice_clone/"
+sys.path.appen(BASE_PATH_VOICE_CLONE)
 import numpy as np
 from pathlib import Path
 from scipy.io import wavfile
@@ -32,7 +34,7 @@ from voice_clone.synthesizer.inference import Synthesizer
 from voice_clone.encoder import inference as encoder
 from voice_clone.vocoder import inference as vocoder
 
-BASE_PATH_VOICE_CLONE = "./voice_clone/"
+
 SAMPLE_RATE = 22050
 embedding = None
 
